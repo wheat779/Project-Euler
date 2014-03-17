@@ -3,12 +3,12 @@
 #ifndef Euler___h
 #define Euler___h
 
-int euler3();
-int euler7();
-int euler8();
-int euler9();
-int euler10();
+void euler3();
+void euler7();
+void euler8();
+void euler9();
+void euler10();
 
-int euler11();
+void euler11();
 
 #endif
