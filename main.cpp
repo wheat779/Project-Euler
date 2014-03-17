@@ -5,24 +5,36 @@
 
 #include <iostream>
 #include <vector>
+#include <ctime>
 #include "problems.h"
 
 using namespace std;
 
 void problemIncomplete();
-void runInputProblem();
+void timeFunction();
+void getProblemChoice();
+
+
+int runProblem = -1;                            // Set to problem you want to run. -1 for user input. 0 to run all problems.
+const int highestCompleted = 11;                // Set to number of highest completed Euler Problem for array length.
+bool benchmark = true;                          // Set to true to time problems, set to false to disable.
+void (* problems [highestCompleted+1])() = {};  // Create an array of function pointers for problem functions.
+
 
 int main(int argc, const char * argv[])
 {
-    cout << endl << "3:  "; euler3();
-//    cout << endl << "7:  "; euler7(); // the primesearch is fairly slow, commenting out for responsiveness.
-    cout << endl << "8:  "; euler8();
-    cout << endl << "9:  "; euler9();
-    cout << endl << "10: "; euler10();
-    cout << endl << "11: "; euler11();
+    // Set all array indices to problemIncomplete to remove nulls.
+    for (int i = 0; i < highestCompleted+1;i++) { problems[i] = problemIncomplete; }
     
-    // Alternatively, comment those out and put all functions in an array and do more complicated things.
-    //runInputProblem();
+    // Array index 8 = Euler Problem 8 etc.
+    problems[3]  = euler3;
+    problems[7]  = euler7;
+    problems[8]  = euler8;
+    problems[9]  = euler9;
+    problems[10] = euler10;
+    problems[11] = euler11;
+    
+    getProblemChoice();
 
     return 0;
 }
@@ -32,24 +44,28 @@ int main(int argc, const char * argv[])
 
 
 
-// This might be overengineered for this early on?
-void runInputProblem() {
-    // Set to problem you want to run or Set to -1 to get number from input or Set to  0 to run all problems.
-    int runProblem = -1;
-    
-    // Set to the same number as the highest Euler problem completed.
-    const int highestCompleted = 11;
-    
-    // Create an array of function pointers, set default value to return that the problem hasnt been done.
-    void (* arr [highestCompleted+1])() = {problemIncomplete};
-    
-    // Array index 8 = Euler Problem 8 etc.
-    arr[3]  = euler3;
-    arr[7]  = euler7;
-    arr[8]  = euler8;
-    arr[9]  = euler9;
-    arr[10] = euler10;
-    arr[11] = euler11;
+
+
+
+
+
+
+// Benchmark given function.
+void timeFunction(void (*func) (void)) {
+    long int starttime = clock();
+    func();
+    double time = (clock() - starttime)/double(CLOCKS_PER_SEC/1000);
+    string timetype = " ms";
+    cout << "    Runtime: " << time << timetype << endl;
+}
+
+// When runProblem is set to a problem that hasn't been done yet tell the user.
+void problemIncomplete() {
+    cout << "Uh oh, haven't done that one yet!" << endl;
+}
+
+// Get user input or run the problem assigned to runProblem.
+void getProblemChoice() {
     
     // If runProblem is set to -1, ask the user for input.
     if (runProblem < 0) {
@@ -65,21 +81,27 @@ void runInputProblem() {
     
     // If runProblem is set to a number greater than 0 only run that problem.
     if (runProblem > 0) {
-        cout << runProblem << ": "; arr[runProblem]();
+        if (benchmark == true) {
+            cout << endl << runProblem << ": "; timeFunction(problems[runProblem]);
+        }
+        else {
+            cout << runProblem << ": "; problems[runProblem]();
+        }
         return;
     }
     
     // If runProblem is set to 0 run all problems.
     if (runProblem == 0) {
         for (int i=1;i<=highestCompleted;i++){
-            if (arr[i] != 0) {
-                cout << endl << i << ": "; arr[i]();
+            if (problems[i] == problemIncomplete) {
+                continue;
+            }
+            if (benchmark == true) {
+                cout << endl << i << ": "; timeFunction(problems[i]);
+            } else {
+                cout << endl << i << ": "; problems[i]();
             }
         }
+        return;
     }
-}
-
-// When runProblem is set to a problem that hasn't been done yet tell the user.
-void problemIncomplete() {
-    cout << "Uh oh, haven't done that one yet!" << endl;
 }
