@@ -32,12 +32,14 @@ void euler11(){
     
     
     //read in the text file into a string stream
-    ifstream numFile ("/Users/cameronkemper/Code/Project-Euler/11.txt");
+    string file = getenv("HOME");
+    file += "/Code/Project-Euler/11.txt";
+    ifstream numFile (file);
     if(numFile.is_open()){
         while (getline (numFile, line)){
             
             ss << line << " ";
-            cout << line << endl;
+            // cout << line << endl;
         }
         
         numFile.close();
@@ -58,7 +60,7 @@ void euler11(){
     }
     
     // Test code: printing the matrix
-    cout << endl;
+    // cout << endl;
     
     //    for(int i = 0; i < row; i++){
     //        for(int j = 0; j < col; j++){
