@@ -10,7 +10,7 @@ using namespace std;
 // Elegant method for finding prime factors
 void euler3(){
     long int bigNum = 600851475143;
-    
+
     // Iterate through, find smallest factor
     for(long int i = 2; i < bigNum; i++){
         if(bigNum % i == 0){
@@ -52,4 +52,3 @@ void euler3(){
 //    cout << bigNum;
 //    return 0;
 //}
-

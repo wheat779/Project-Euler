@@ -13,18 +13,18 @@ using namespace std;
 void euler7(){
     long t1 = 0;
     vector<int> primes;
-    
+
     t1 = clock();
     primes.push_back(5);
-    
+
     for(int i = 2; i < 200000; i++){
         i++;
         primes.push_back(i);
     }
-    
-    
+
+
     for(int i = 0; i < primes.size(); i++){
-        
+
         for(int j = 1; j < primes.size(); j++){
             //cout << "is " << primes[j] << " divisible by " << primes[i] << "?" << endl;
             if(primes[j] % primes[i] == 0 && primes[j] != primes[i]){
@@ -35,8 +35,8 @@ void euler7(){
             else{
                 //cout << "no." << endl << endl;
             }
-            
-            
+
+
         }
     }
     //    cout << endl << "the size of the vector is " << primes.size() << endl;
@@ -49,17 +49,3 @@ void euler7(){
     //    cout << endl << "the size of the vector is " << primes.size() << endl;
     //    cout << endl << "runtime: " << ((double)(clock() - t1)/CLOCKS_PER_SEC);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
