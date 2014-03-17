@@ -11,13 +11,13 @@ using namespace std;
 
 int main(int argc, const char * argv[])
 {
-    cout << endl << "Euler 3: "  << euler3()  << endl;
-    cout << endl << "Euler 4: "  << euler4()  << endl;
-    cout << endl << "Euler 7: "  << euler7()  << endl;
-    cout << endl << "Euler 9: "  << euler9()  << endl;
-    cout << endl << "Euler 10: " << euler10() << endl;
-    
-    cout << endl << "Euler 11: " << euler11() << endl;
+    cout << endl << "3:  "; euler3();
+    cout << endl << "7:  "; euler7();
+    cout << endl << "8:  "; euler8();
+    cout << endl << "9:  "; euler9();
+    cout << endl << "10: "; euler10();
+
+    cout << endl << "11: "; euler11();
 
     return 0;
 }

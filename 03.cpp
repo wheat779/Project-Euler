@@ -21,8 +21,9 @@ void euler3(){
     }
     // Once you have factored out each of the smallest factors of the number,
     // what you have remaing is the largest prime factor for the number
-    cout << bigNum;
+    cout << "Largest prime factor of 600851475143: " << bigNum << endl;
 }
+
 
 //Brute force method for finding prime factors of a number
 //int main(){

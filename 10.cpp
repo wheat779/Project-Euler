@@ -11,7 +11,7 @@
 using namespace std;
 
 void euler10(){
-    long int t1 = clock();
+//    long int t1 = clock();
     // Create the limit of primes you want to generate to, and find its square root
     // square root is used to limit calculations within loops to ensure the loops
     // do not continue to generate quadratic answers above the limit
@@ -64,6 +64,6 @@ void euler10(){
             //cout << "new sum = " << primeSum << endl;
         }
     }
-    cout << "runtime: " << ((double)(clock() - t1)/CLOCKS_PER_SEC);
-    cout << endl << primeSum << endl;
+    cout << "Sum of all Primes below two million: " << primeSum << endl;
+//    cout << "runtime: " << ((double)(clock() - t1)/CLOCKS_PER_SEC) << endl;
 }

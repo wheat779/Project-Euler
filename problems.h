@@ -4,8 +4,8 @@
 #define Euler___h
 
 int euler3();
-int euler4();
 int euler7();
+int euler8();
 int euler9();
 int euler10();
 

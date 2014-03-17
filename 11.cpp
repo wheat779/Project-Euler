@@ -43,7 +43,8 @@ void euler11(){
         numFile.close();
     }
     else{
-        cout << "unable to open file";
+        cout << "Unable to open file." << endl;
+        return;
     
     }
     
@@ -112,5 +113,5 @@ void euler11(){
         }
     }
     // Output answer
-    cout << "largest product: " << largestProduct << endl;
+    cout << "Largest product in grid: " << largestProduct << endl;
 }

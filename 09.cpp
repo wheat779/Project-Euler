@@ -14,9 +14,9 @@ void euler9(){
         for(double k = i+1; k < sum/2; k++){
             c = sum - i - k;
             if( ((i*i) + (k*k)) == (c*c)){
-                cout << "c = " << c << endl;
-                cout << i << " + " << k << " + " << c  << " = " << i+k+c << endl << endl;
-                cout << "the product of abc is... " << i*k*c << endl;
+//                cout << "c = " << c << endl;
+//                cout << i << " + " << k << " + " << c  << " = " << i+k+c << endl << endl;
+                cout << "a + b + c = 1000, a*b*c = " << int(i*k*c) << endl;
             }
         }
     }
