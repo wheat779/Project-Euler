@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>00A3208B-77A3-45FA-AF01-C2D1A9EC747E</string>
+	<string>01884900-E810-45DF-BF73-E703AE26FA28</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Project-Euler</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CD2639C5-E70D-4243-84EB-F3FA21F30AA4</key>
-		<string>ssh://github.com/zolrath/Project-Euler.git</string>
+		<key>E5C23CC2-8578-461F-8688-D30540BA64E0</key>
+		<string>https://github.com/wheat779/Project-Euler.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Project-Euler.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CD2639C5-E70D-4243-84EB-F3FA21F30AA4</key>
+		<key>E5C23CC2-8578-461F-8688-D30540BA64E0</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/zolrath/Project-Euler.git</string>
+	<string>https://github.com/wheat779/Project-Euler.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CD2639C5-E70D-4243-84EB-F3FA21F30AA4</string>
+	<string>E5C23CC2-8578-461F-8688-D30540BA64E0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CD2639C5-E70D-4243-84EB-F3FA21F30AA4</string>
+			<string>E5C23CC2-8578-461F-8688-D30540BA64E0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Project-Euler</string>
 		</dict>

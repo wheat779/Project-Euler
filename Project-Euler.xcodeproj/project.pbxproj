@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84A208A9190300710089FD14 /* 04.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A208A8190300710089FD14 /* 04.cpp */; };
+		84A208AB190300770089FD14 /* 05.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84A208AA190300770089FD14 /* 05.cpp */; };
 		9B51ED0018D69EED0058D4B1 /* 03.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B51ECF718D69EED0058D4B1 /* 03.cpp */; };
 		9B51ED0218D69EED0058D4B1 /* 07.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B51ECF918D69EED0058D4B1 /* 07.cpp */; };
 		9B51ED0318D69EED0058D4B1 /* 09.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9B51ECFA18D69EED0058D4B1 /* 09.cpp */; };
@@ -29,6 +31,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84A208A8190300710089FD14 /* 04.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 04.cpp; sourceTree = SOURCE_ROOT; };
+		84A208AA190300770089FD14 /* 05.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 05.cpp; sourceTree = SOURCE_ROOT; };
 		9B51ECEB18D69E1E0058D4B1 /* Project-Euler */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Project-Euler"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B51ECF718D69EED0058D4B1 /* 03.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 03.cpp; sourceTree = SOURCE_ROOT; };
 		9B51ECF918D69EED0058D4B1 /* 07.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 07.cpp; sourceTree = SOURCE_ROOT; };
@@ -76,6 +80,8 @@
 				9B51ED0618D69EFE0058D4B1 /* main.cpp */,
 				9B51ECFE18D69EED0058D4B1 /* problems.h */,
 				9B51ECF718D69EED0058D4B1 /* 03.cpp */,
+				84A208A8190300710089FD14 /* 04.cpp */,
+				84A208AA190300770089FD14 /* 05.cpp */,
 				9B51ECF918D69EED0058D4B1 /* 07.cpp */,
 				9B62B9ED18D6A94A007E6647 /* 08.cpp */,
 				9B51ECFA18D69EED0058D4B1 /* 09.cpp */,
@@ -140,7 +146,9 @@
 				9B51ED0318D69EED0058D4B1 /* 09.cpp in Sources */,
 				9B51ED0518D69EED0058D4B1 /* 11.cpp in Sources */,
 				9B51ED0418D69EED0058D4B1 /* 10.cpp in Sources */,
+				84A208AB190300770089FD14 /* 05.cpp in Sources */,
 				9B62B9EE18D6A94A007E6647 /* 08.cpp in Sources */,
+				84A208A9190300710089FD14 /* 04.cpp in Sources */,
 				9B51ED0718D69EFE0058D4B1 /* main.cpp in Sources */,
 				9B51ED0018D69EED0058D4B1 /* 03.cpp in Sources */,
 				9B51ED0218D69EED0058D4B1 /* 07.cpp in Sources */,

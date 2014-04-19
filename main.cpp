@@ -28,6 +28,8 @@ int main(int argc, const char * argv[])
     
     // Array index 8 = Euler Problem 8 etc.
     problems[3]  = euler3;
+    problems[4]  = euler4;
+    problems[5]  = euler5;
     problems[7]  = euler7;
     problems[8]  = euler8;
     problems[9]  = euler9;
