@@ -30,6 +30,7 @@ int main(int argc, const char * argv[])
     problems[3]  = euler3;
     problems[4]  = euler4;
     problems[5]  = euler5;
+    problems[6]  = euler6;
     problems[7]  = euler7;
     problems[8]  = euler8;
     problems[9]  = euler9;

@@ -6,6 +6,7 @@
 void euler3();
 void euler4();
 void euler5();
+void euler6();
 void euler7();
 void euler8();
 void euler9();
